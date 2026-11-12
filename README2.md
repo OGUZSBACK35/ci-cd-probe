@@ -25,6 +25,18 @@ man kann auch mit git checkout feature-login arbeiten
 2.  "** Example **" fettDruck
 
 
-## Wichtige Kommandos
+## Wichtige Kommandos Commits suchen switchen und Branches auch
 1.  git Log // Zeigt alle Commits. du kannst auch schreiben git Log -5 --oneline  zeigt die letzten 5 Commits
+<<<<<<< HEAD
 2.  git Log -1 --oneline // zeigt dein aktueller commit.
+=======
+2.  git Log -1 --oneline // zeigt dein aktueller commit
+3. git switch --detach Hash // switch commit just find the hashtag of your commits with git Log than copy the one you want and write it where hash is
+4.git switch -c nameofBranch // erstelle neuen Branch zum Commit wo ich mich jetzt befinde
+5. git switch -c nameofbranch HASHofCommit // erstelle neuen Branch zu einem bestimmten Commit
+6.  git push -u origin branchName // origin is remote Verbindung zwischen Github und Lokal. Man muss diesen Schritt machen um den Neuen erstellten Branch mit GitHub zu verbinden
+7.  git branch -D branchname // delete local  branch
+8.  git push origin --delete branch name // delete a branch on GitHub   
+9. git branch // zeigt Alle Branches und wo man jetzt ist
+10  git switch branchName // swich branches. 
+>>>>>>> tempBranch 
