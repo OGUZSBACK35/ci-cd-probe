@@ -23,3 +23,8 @@ man kann auch mit git checkout feature-login arbeiten
 ## Schreibweise
 1.  "#" macht überschrifte und jemehr "###" in folge du schreibst, desto kleiner ist der Text.
 2.  "** Example **" fettDruck
+
+
+## Wichtige Kommandos
+1.  git Log // Zeigt alle Commits. du kannst auch schreiben git Log -5 --oneline  zeigt die letzten 5 Commits
+2.  git Log -1 --oneline // zeigt dein aktueller commit
