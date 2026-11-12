@@ -27,4 +27,4 @@ man kann auch mit git checkout feature-login arbeiten
 
 ## Wichtige Kommandos
 1.  git Log // Zeigt alle Commits. du kannst auch schreiben git Log -5 --oneline  zeigt die letzten 5 Commits
-2.  git Log -1 --oneline // zeigt dein aktueller commit
+2.  git Log -1 --oneline // zeigt dein aktueller commit.
