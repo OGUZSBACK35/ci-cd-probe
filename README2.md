@@ -39,6 +39,11 @@ man kann auch mit git checkout feature-login arbeiten
 
 
 ## Workshop Abläufe 12.11.2026
+
+# Inhaltverzeichnis
+-[1.  Einrichten Readme auf HTML-Projekt](#Wdh git-Workflow)
+-[2.  klone
+
 1.  Einrichtung auf HTML-Projekt
 VSCode: Menü -> Datei -> Neue Datei -> Dateiname eingeben: Readme.md
 VSCODE erkennt automatisch die .md Markdown-Datei
@@ -87,3 +92,51 @@ git clone https://github.com/usern
 
 3. Einrichtung der Anwendung über den geklonten Quelltext und Ausführen der Anwendung
 Hier Beschreibung
+Machen Sie den Quellcode für sich verfügbar undsichern Sie diesen Quelltext in einem eingenen GitHub-Repository in Ihrem Projektordner steht die Ressource noch auf der Quelle btw. dem GitHub-Repo von dem Sie geklont haben.
+
+1.  Neues GitHub Repository erstellen
+    unter ihrem GitHub-Account: Home-Ansicht: Navigationsleiste und Pluszeichen "+" Neues Repository (New Repository)
+    oder Menü -> All repositories -> grüner Button "New repository
+     Einstellung Private und Public berücksichtigen.
+
+    Zum neuen Repository gehen: Anklicken und https Ressource kopieren
+    Bei frischem Repo ohne Quelltext sehen Sie direkt den Link, sofort kopieren: siehe Dokument-Symbol
+    Wenn schon Code drin steht gehen Sie über den grünen Code Button "<> Code"
+    -
+2.  Die eigene neue GitHub-Ressource in den Projektordner schreiben
+    VSSCode im Terminal, Prompt zeigt auf den Projektordner
+    -'git remote set-URL origin https://github.com/ihrGithubAccountName/NeuesRepoName.git
+    Verbindung prüfen, hier sollte ihre GitHub-Repository Ressource zu sehen sein.
+
+    -- git remote -c
+    Dann der Dreiklang git add, git Commit, git push
+    da sie Wahrscheinlich noch keine Änderungen vorgenommen haben ist git add nicht notwendig
+    -'git commit -m "Original Code der Angular-Anwendung"
+    da sie zum ersten Mal hier pushen, den push-Befehl komplett angeben
+    - git push -u origin main
+      origin bezieht sich immer auf die Github-Ressource, die im Projektordner angelegt wurde.
+      dann sollten sie den Quellcode in der Cloud (ihrem Repository auf Github)
+      übertragen haben.
+
+3. Installation für um die Anwendung zum Laufen zu bringen (hier die Angular- Amwendung)
+VSCODE Terminal:
+Installation von Node.js LTS als middleware mit den benötigten Laufzeitumgebungen (Engine) und Bibliotheken
+-'Winget install Open.NodeJS.LTS
+Kontrollieren der Installation, Version von Node.js prüfen       
+- `node -v`
+Version des NodeJS Paketmanagers
+-`npm -v`
+Hier sollten Ihnen die aktuellen Versionnummern angezeigt werden
+Bei Problemen: Oftmals verweigert Windows Ihnen Skripte im Betriebssystem zu schreiben
+Mit dem folgenden Befehl holen Sie sich die Berechtigung:
+jetzt sollte auch die Prüfung der Versionen funktionieren.
+
+4.  Die Laufzeitumgebung, Build-Tools und Bibliotheken erstellen VSCode Terminal in ihrem Projektordner
+-´npm install´
+Es werden einige Warmeldungen erzeugt, die harmlos sind. Sie sollten keine Error-Meldung haben
+
+5.   Die Anwendung starten mit dem Build, Zusammenbau aller Funktionalitäten
+-`npm start`
+
+Angular Anwendungen laufen standardmäßig auf dem Port 4200
+Wenn Sie jetzt localhost: 4200 in Ihrem Browser eingeben, sehen Sie die Anwendung 
