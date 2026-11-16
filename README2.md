@@ -145,5 +145,8 @@ airgendwas
 fehler sdsd
 
 wawawaw
+<<<<<<< HEAD
 
 WARUM?! WARUM? WARUUUUM?!!?!
+=======
+>>>>>>> 4169cc6396f9805941f2459a46d9283e1d65b9fb
