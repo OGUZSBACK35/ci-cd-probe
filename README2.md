@@ -144,9 +144,6 @@ Wenn Sie jetzt localhost: 4200 in Ihrem Browser eingeben, sehen Sie die Anwendun
 airgendwas  
 fehler sdsd
 
-wawawaw OGUZHAN AYDINLI
-<<<<<<< HEAD
+wawawaw OGUZHAN AYDINLI ############# vol 2 
 
 WARUM?! WARUM? WARUUUUM?!!?!
-=======
->>>>>>> 4169cc6396f9805941f2459a46d9283e1d65b9fb
