@@ -1,4 +1,4 @@
-name: Ilk Pipeline
+name: Erste Pipeline Degistirilmis Hali
 on:
   push:
     branches: [ neue-weg ]
