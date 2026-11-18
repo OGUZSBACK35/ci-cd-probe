@@ -1,5 +1,9 @@
 name: Ilk Pipeline
-on: push
+on:
+  push:
+    branches: [ neue-weg ]
+  pull_request:
+    branches: [ neue-weg ]
 
 jobs:
   test:
