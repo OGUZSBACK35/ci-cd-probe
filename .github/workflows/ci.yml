@@ -10,3 +10,6 @@ jobs:
 
       - name: Basit bir mesaj yazdir
         run: echo "Merhaba GitHub Actions! System is running."
+
+      - name: Projedeki dosyalari listele
+        run: ls -la
