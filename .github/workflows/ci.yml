@@ -1,0 +1,12 @@
+name: Erste Pipeline
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kodu ice aktar
+        uses: actions/checkout@v4
+
+      - name: Basit bir mesaj yazdir
+        run: echo "Merhaba GitHub Actions! System is running."
