@@ -1,4 +1,4 @@
-name: Erste Pipeline
+name: Ilk Pipeline
 on: push
 
 jobs:
@@ -9,7 +9,16 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Basit bir mesaj yazdir
-        run: echo "Merhaba GitHub Actions! System is running."
+        run: echo "Merhaba GitHub Actions! Sistem calisiyor."
 
       - name: Projedeki dosyalari listele
         run: ls -la
+
+      - name: Dosya varlik kontrolu (Test Adimi)
+        run: |
+          if [ -f "README2.md" ]; then
+            echo "Test Basarili: README2.md dosyasi mevcut."
+          else
+            echo "Test Basarisiz: README2.md bulunamadi!"
+            exit 1
+          fi
